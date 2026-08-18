@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyQR</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="avatar-ring">
+        <div class="avatar-initials">KS</div>
+      </div>
+      <h1>Khourn Sothearith</h1>
+      <p class="tagline">Developer • Creator • Mr Sothearith</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2 class="section-title">Support Me</h2>
+    <div class="line"></div>
+    <p class="intro-text">Scan or download a QR code below to send your support.<br>Your help means a lot! 🙏</p>
+
+    <div class="qr-section">
+
+      <!-- ABA KHR -->
+      <div class="qr-card" onclick="openABALink('khr')">
+        <div class="card-badge khr-badge">KHR</div>
+        <img src="qr1.png" alt="Support via ABA KHR" loading="lazy">
+        <h3>Support KHR</h3>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="https://pay.ababank.com/JFPJMo6DK7iGneS78" target="_blank" rel="noopener" onclick="event.stopPropagation();">
+            <i class="fas fa-external-link-alt"></i> Open Now
+          </a>
+          <button class="btn btn-outline" onclick="event.stopPropagation(); forceDownload('qr1.png', 'ABA_KHR_QR.png')">
+            <i class="fas fa-download"></i> Download
+          </button>
+        </div>
+      </div>
+
+      <!-- ABA USD -->
+      <div class="qr-card" onclick="openABALink('usd')">
+        <div class="card-badge usd-badge">USD</div>
+        <img src="qr2.png" alt="Support via ABA USD" loading="lazy">
+        <h3>Support USD</h3>
+        <div class="card-actions">
+          <a class="btn btn-primary" href="https://pay.ababank.com/kmnY6HysgbQQe3pn7" target="_blank" rel="noopener" onclick="event.stopPropagation();">
+            <i class="fas fa-external-link-alt"></i> Open Now
+          </a>
+          <button class="btn btn-outline" onclick="event.stopPropagation(); forceDownload('qr2.png', 'ABA_USD_QR.png')">
+            <i class="fas fa-download"></i> Download
+          </button>
+        </div>
+      </div>
+
+    </div>
+
+    <p class="hint-text">
+      📱 Tap a QR card or button to open ABA App. If it doesn't open automatically, try Chrome or Safari.
+    </p>
+
+    <p class="thank-you">Thank you for your kindness. Wishing you all the best ✨</p>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1Dro38qF4v/" target="_blank" rel="noopener" title="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.tiktok.com/@sothearithkhourn?_t=ZS-8y2in5BzbCm&_r=1" target="_blank" rel="noopener" title="TikTok">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="https://www.instagram.com/sothearithkhourn?igsh=MjhxenJtOTBheHFt" target="_blank" rel="noopener" title="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="http://t.me/K_Sothearith" target="_blank" rel="noopener" title="Telegram">
+        <i class="fab fa-telegram-plane"></i>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2026 Khourn Sothearith. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
