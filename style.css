@@ -50,8 +50,8 @@ header::before {
 }
 
 .avatar-ring {
-  width: 80px;
-  height: 80px;
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
   border: 3px solid rgba(255,255,255,0.5);
   margin: 0 auto 18px;
@@ -60,13 +60,18 @@ header::before {
   justify-content: center;
   background: rgba(255,255,255,0.12);
   backdrop-filter: blur(4px);
+  overflow: hidden;
 }
 
-.avatar-initials {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: white;
-  letter-spacing: 1px;
+.avatar-initials{
+  width: 100%;
+  height: 100%;
+}
+
+.avatar-initials img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 header h1 {
@@ -161,8 +166,8 @@ header h1 {
 .qr-card h3 {
   margin: 0 0 14px;
   font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--dark);
+  font-weight: 350;
+  color: var(--text-muted);
 }
 
 .card-actions {
@@ -211,6 +216,53 @@ header h1 {
   color: white;
 }
 
+/* account number */
+.account-number {
+    width: 100%;
+    max-width: 420px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.account-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 14px 0;
+    font-weight: bold;
+}
+
+.account-row + .account-row {
+    border-top: 1px solid rgb(204, 199, 199);
+}
+
+.account-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.account-label svg {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.account-label p,
+.account-value {
+    margin: 0;
+}
+
+.account-value {
+    white-space: nowrap;
+    cursor: pointer;
+    transition: o.2s;
+}
+.account-value:hover{
+  color: var(--primary);
+  transform: scale(1.03);
+}
 /* ── Hint / Thank you ── */
 .hint-text {
   font-size: 0.875rem;
@@ -267,4 +319,23 @@ footer {
   .qr-card { width: 90%; max-width: 320px; }
   .card-actions { flex-direction: row; }
   .card-actions .btn { padding: 10px 10px; font-size: 0.82rem; }
+  .account-number {
+        width: 90%;
+        max-width: 400px;
+        padding: 0;
+    }
+    .account-row {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+    .account-label {
+        gap: 8px;
+    }
+    .account-label svg {
+        width: 20px;
+        height: 20px;
+    }
+    .account-value {
+        font-size: 0.9rem;
+    }
 }

@@ -11,54 +11,58 @@
   <header>
     <div class="header-inner">
       <div class="avatar-ring">
-        <div class="avatar-initials">KS</div>
+        <div class="avatar-initials">
+          <img src="./Profile.png" alt="">
+        </div>
       </div>
-      <h1>Khourn Sothearith</h1>
+      <h1> KHOURN SOTHEARITH</h1>
       <p class="tagline">Developer • Creator • Mr Sothearith</p>
     </div>
   </header>
 
   <div class="container">
-    <h2 class="section-title">Support Me</h2>
+    <h2 class="section-title">ABA<span style="color: red;">'</span> QR</h2>
     <div class="line"></div>
-    <p class="intro-text">Scan or download a QR code below to send your support.<br>Your help means a lot! 🙏</p>
+    <p class="intro-text">Scan or download a QR code below to send your money.</p>
 
     <div class="qr-section">
-
       <!-- ABA KHR -->
-      <div class="qr-card" onclick="openABALink('khr')">
-        <div class="card-badge khr-badge">KHR</div>
-        <img src="qr1.png" alt="Support via ABA KHR" loading="lazy">
-        <h3>Support KHR</h3>
+      <div class="qr-card" onclick="openABALink('khqr')">
+        <div class="card-badge khr-badge">KHQR</div>
+        <img src="./ABA_QR.jpg" alt="Support via ABA KHR" loading="lazy">
+        <h3>Scan with any Mobile Banking App<br> supporting KHQR</h3>
         <div class="card-actions">
-          <a class="btn btn-primary" href="https://pay.ababank.com/JFPJMo6DK7iGneS78" target="_blank" rel="noopener" onclick="event.stopPropagation();">
+          <a class="btn btn-primary" href="https://pay.ababank.com/oRF8/gjryg4u6" target="_blank" rel="noopener" onclick="event.stopPropagation();">
             <i class="fas fa-external-link-alt"></i> Open Now
           </a>
-          <button class="btn btn-outline" onclick="event.stopPropagation(); forceDownload('qr1.png', 'ABA_KHR_QR.png')">
+          <button class="btn btn-outline" onclick="event.stopPropagation(); forceDownload('ABA_QR.jpg', 'ABA_KHR_QR.png')">
             <i class="fas fa-download"></i> Download
           </button>
         </div>
       </div>
+    </div>
 
-      <!-- ABA USD -->
-      <div class="qr-card" onclick="openABALink('usd')">
-        <div class="card-badge usd-badge">USD</div>
-        <img src="qr2.png" alt="Support via ABA USD" loading="lazy">
-        <h3>Support USD</h3>
-        <div class="card-actions">
-          <a class="btn btn-primary" href="https://pay.ababank.com/kmnY6HysgbQQe3pn7" target="_blank" rel="noopener" onclick="event.stopPropagation();">
-            <i class="fas fa-external-link-alt"></i> Open Now
-          </a>
-          <button class="btn btn-outline" onclick="event.stopPropagation(); forceDownload('qr2.png', 'ABA_USD_QR.png')">
-            <i class="fas fa-download"></i> Download
-          </button>
+    <div class="account-number">
+      <!-- KHR account -->
+      <div class="account-row">
+        <div class="account-label">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20.001" height="20.001" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 13546.54 13546.54"><path d="M6773.33 1575.59c2870.56 0 5197.62 2327.18 5197.62 5197.62 0 2870.56-2327.06 5197.74-5197.62 5197.74S1575.71 9643.77 1575.71 6773.21c0-2870.44 2327.06-5197.62 5197.62-5197.62zm0-1575.59C8643.32 0 10337 758.24 11562.64 1983.89c1225.65 1225.66 1983.89 2919.2 1983.89 4789.44 0 1870.24-758.24 3563.79-1983.89 4789.31-1225.53 1225.65-2919.07 1983.89-4789.31 1983.89-1870.24 0-3563.79-758.24-4789.44-1983.89C758.24 10336.99 0 8643.32 0 6773.33c0-1870.24 758.24-3563.79 1983.89-4789.44C3209.55 758.24 4903.09 0 6773.33 0zm4319.94 2453.28C9987.8 1347.8 8460.36 663.93 6773.33 663.93c-1687.14 0-3214.59 683.87-4320.06 1789.35C1347.79 3558.75 663.92 5086.19 663.92 6773.34c0 1687.02 683.87 3214.47 1789.35 4319.94 1105.47 1105.47 2632.91 1789.34 4320.06 1789.34 1687.14 0 3214.59-683.87 4319.94-1789.34 1105.47-1105.35 1789.34-2632.79 1789.34-4319.94 0-1687.14-683.87-3214.59-1789.34-4320.06zM8627.69 6283.89c-157.61 287.27-346.75 497.33-569.11 633.87-222.38 134.83-476.28 225.95-759.97 273.24v2088.92c0 105.15-40.26 192.7-120.79 259.19-80.53 66.49-162.9 99.86-248.73 99.86h-337.87c-122.64 0-253.9-47.28-390.58-141.85-136.55-92.84-262.64-220.65-376.42-379.98-113.77-157.61-210.06-336.28-285.42-535.87-75.23-197.87-112.05-400.91-112.05-609.37 0-215.36 50.73-385.16 150.59-506.07 101.59-120.8 231.12-181.99 388.73-181.99 19.21 0 52.58 5.17 99.86 15.64 45.44 10.58 91 35.09 138.28 77.08 45.56 40.26 87.55 105.15 122.52 192.7 36.81 85.7 54.3 206.61 54.3 360.65 0 133.11-20.93 232.85-61.2 301.19-42.11 66.49-85.82 115.62-134.83 150.59-47.28 34.97-91.12 57.75-133.1 70.06-40.27 10.47-61.32 31.52-61.32 57.75 0 41.99 8.74 92.84 26.22 154.16 17.61 61.2 45.56 122.52 84.1 185.56 40.27 61.32 85.83 113.78 138.28 155.89 54.3 41.99 115.62 64.76 187.41 64.76V7217.24c-157.61-14.03-308.2-29.8-453.5-49-145.42-19.34-301.18-59.6-469.26-120.8-185.68 0-329.25-54.3-430.84-161.18-103.31-108.48-154.04-232.84-154.04-376.41 0-150.59 50.73-278.41 154.04-383.56 101.59-103.19 231.12-155.76 383.56-155.76 134.83 0 252.05 36.69 351.91 110.32 101.59 73.51 162.91 169.8 187.41 290.6 47.28 29.79 106.76 56.14 175.1 78.8 68.21 22.78 154.03 54.3 255.62 94.57v-266.09c0-182.12-34.97-306.48-106.76-374.7-71.91-68.33-171.64-103.43-297.73-103.43-52.58 0-96.29 3.57-136.56 8.75-38.54 5.29-73.51 7.14-105.03 7.14-71.91 0-131.38-47.41-176.94-143.7-45.56-96.29-112.05-225.82-197.87-390.45l1292.26-1374.52h145.42l814.14 555.07c21.06 19.21 61.32 29.8 124.37 29.8 50.73 0 96.29-14.04 138.28-45.56l148.86 215.36-600.5 616.39c-28.08 0-66.62-22.78-117.35-68.34-52.58-43.71-113.9-92.84-185.68-145.29-71.79-52.58-155.77-103.31-253.9-148.87-98.02-45.56-204.89-70.06-320.39-70.06-40.27 0-82.38 10.46-122.64 29.79-41.99 17.49-80.53 45.56-115.5 80.53-36.82 36.82-68.34 71.79-96.29 108.61-26.35 34.97-57.87 80.52-91.12 136.55 92.84-17.49 176.82-26.23 255.62-26.23 133.11 0 253.9 19.21 362.51 59.48 106.75 38.54 199.59 89.27 276.68 154.16 77.08 63.04 136.55 134.7 176.81 217.08 42.11 82.25 61.32 169.8 61.32 260.92v754.67c178.67-17.49 353.76-63.05 528.85-138.28 175.09-75.36 348.46-213.64 523.55-415.08l276.68 215.36z"/></svg>
+          <p>KHR account:</p>
         </div>
+        <p class="account-value" onclick="copyAccountNumber(this)">008 934 650</p>
       </div>
-
+      <!-- USD account  -->
+      <div class="account-row">
+        <div class="account-label">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20.001" height="20.001" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 512"><path d="M256 59.55c108.5 0 196.45 87.96 196.45 196.45S364.5 452.45 256 452.45c-108.49 0-196.45-87.96-196.45-196.45S147.51 59.55 256 59.55zM256 0c70.68 0 134.69 28.66 181.02 74.98C483.34 121.31 512 185.31 512 256c0 70.69-28.66 134.7-74.98 181.02C390.7 483.34 326.69 512 256 512c-70.69 0-134.69-28.66-181.02-74.98C28.66 390.69 0 326.68 0 256c0-70.69 28.66-134.69 74.98-181.02C121.31 28.66 185.31 0 256 0zm163.28 92.72C377.49 50.94 319.76 25.09 256 25.09c-63.77 0-121.5 25.85-163.28 67.63C50.94 134.5 25.09 192.23 25.09 256c0 63.76 25.85 121.49 67.63 163.28 41.78 41.78 99.51 67.63 163.28 67.63 63.77 0 121.5-25.85 163.28-67.63 41.78-41.78 67.63-99.51 67.63-163.28 0-63.77-25.85-121.5-67.63-163.28zM286.15 218.77c-.59-6.7-3.28-11.86-8.06-15.61-3.31-2.59-7.63-4.29-12.92-5.08v38.85l9.64 2.18c9.17 2.01 17.31 4.65 24.39 7.98 7.04 3.33 12.97 7.33 17.79 11.94 4.82 4.56 8.48 9.89 10.95 15.87 2.48 6.01 3.76 12.75 3.84 20.16-.08 11.77-3.06 21.84-8.91 30.28-5.88 8.41-14.33 14.89-25.33 19.37-9.18 3.75-19.98 5.92-32.37 6.52v21.07h-14.93v-21.08c-12.43-.64-23.48-2.9-33.13-6.81-11.6-4.65-20.6-11.73-27-21.24-6.44-9.51-9.72-21.54-9.9-36.08h43.08c.34 5.97 1.96 11 4.77 14.97 2.86 4.01 6.79 7.04 11.77 9.08 3.17 1.32 6.64 2.21 10.41 2.69v-41l-13.35-3.1c-16.11-3.7-28.78-9.68-38.08-17.95-9.26-8.27-13.86-19.45-13.82-33.57-.04-11.51 3.07-21.62 9.3-30.28 6.23-8.65 14.84-15.39 25.89-20.25 9.01-3.94 19.02-6.28 30.06-7.01V139.7h14.93v20.94c11.39.69 21.49 3.06 30.28 7.08 10.66 4.9 18.89 11.73 24.78 20.51 5.89 8.79 8.87 18.94 9 30.54h-43.08zm-35.91-20.69c-2.6.38-4.93.96-6.99 1.75-3.88 1.54-6.78 3.63-8.7 6.23-1.96 2.64-2.94 5.67-3.03 9.04-.09 2.82.47 5.25 1.71 7.38 1.23 2.13 3.07 3.97 5.45 5.58 2.4 1.63 5.3 3.03 8.66 4.23.94.33 1.91.65 2.9.95v-35.16zm14.93 115.64c2.77-.41 5.3-1.05 7.59-1.94 4.26-1.62 7.55-3.88 9.85-6.78 2.31-2.94 3.5-6.27 3.54-10.02-.04-3.5-1.15-6.52-3.28-9.04-2.13-2.52-5.38-4.69-9.77-6.53-2.31-.98-4.96-1.92-7.93-2.82v37.13z"/></svg>
+          <p>USD account:</p>
+        </div>
+        <p class="account-value" onclick="copyAccountNumber(this)">008 934 649</p>
+      </div>
     </div>
 
     <p class="hint-text">
-      📱 Tap a QR card or button to open ABA App. If it doesn't open automatically, try Chrome or Safari.
+      📱 Tap a QR card or button to open ABA App and Click on account number to Copy that number. If it doesn't open automatically,<br>try Chrome or Safari.
     </p>
 
     <p class="thank-you">Thank you for your kindness. Wishing you all the best ✨</p>
